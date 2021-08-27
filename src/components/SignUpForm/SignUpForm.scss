@@ -1,0 +1,182 @@
+@import "styles/shared";
+
+.form__radio-btn-group {
+  display: inline-flex;
+  margin-right: -19px;
+
+  @include for-size(tablet) {
+    margin-right: -16px;
+  }
+}
+
+.form__radio-btn {
+  margin-right: 19px;
+
+  @include for-size(tablet) {
+    margin-right: 16px;
+  }
+
+  & input {
+    @extend %hidden;
+  }
+}
+
+.form__gender-label {
+  display: block;
+  width: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  fill: $primary-text-color;
+  border: 1px solid $primary-border-color;
+  border-radius: 16px;
+
+  @include for-size(tablet) {
+    width: 156px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+
+  &--active {
+    @extend .form__gender-label;
+
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    fill: $secondary-color;
+  }
+}
+
+.label__description {
+  @include font(400, 16px, 1.25, _);
+
+  @include for-size(tablet) {
+    @include font(400, 18px, 1.22, _);
+  }
+}
+
+.icon-gender {
+  margin-bottom: 8px;
+  width: 32px;
+  fill: inherit;
+}
+
+.label__description {
+  @include font(400, 16px, 1.25, _);
+
+  @include for-size(tablet) {
+    @include font(400, 18px, 1.22, _);
+  }
+}
+
+.form__label {
+  margin-bottom: 8px !important;
+  @include font(700, 16px, 1.25, _);
+
+  @include for-size(tablet) {
+    margin-bottom: 12px !important;
+    @include font(700, 18px, 1.22, _);
+  }
+}
+
+.label__wrapper {
+  margin-top: 20px !important;
+
+  @include for-size(tablet) {
+    margin-top: 30px !important;
+  }
+}
+
+.input__wrapper {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+
+  @include for-size(tablet) {
+    top: 20px;
+    right: 20px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    transform: rotate(125deg);
+    background-color: $primary-border-color;
+    border-radius: 16px;
+  }
+}
+
+.eye-icon--visible {
+  @extend .eye-icon;
+
+  &::before {
+    display: none;
+  }
+}
+
+div .form__input {
+  padding: 15px 18px;
+  color: $primary-text-color;
+  @include font(400, 16px, 1.25, _);
+  border-radius: 16px;
+  border: 1px solid $primary-border-color;
+  transition: border 250ms $timing-function;
+
+  @include for-size(tablet) {
+    padding: 24px 25px;
+    @include font(400, 18px, 1.22, _);
+  }
+
+  &:focus {
+    box-shadow: none;
+    border: 1px solid $border-active-color;
+    color: $primary-text-color;
+  }
+
+  &::placeholder {
+    transition: color 250ms $timing-function;
+  }
+
+  &:hover::placeholder {
+    color: $primary-border-color;
+  }
+
+  &--error {
+    border-color: $error-color;
+    color: $error-color;
+  }
+}
+
+.error {
+  margin-top: 12px !important;
+}
+
+.error__message {
+  @include font(400, 16px, 1.25, _);
+  color: $error-color;
+}
+
+form .login__button {
+  @extend %button;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  padding: 15px 121px;
+  @include font(400, 16px, 1.25, _);
+
+  @include for-size(tablet) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 24px 213px;
+    @include font(400, 18px, 1.22, _);
+  }
+}

@@ -1,0 +1,73 @@
+@import "styles/shared";
+
+.signUp__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 340px;
+  padding: 25px 16px 18px;
+  box-shadow: 5px 10px 30px $box-shadow-color;
+  border-radius: 16px;
+
+  @include for-size(tablet) {
+    max-width: 570px;
+    padding: 29px 35px 35px;
+  }
+}
+
+.logo {
+  @include icon-property(55px, 56px);
+  margin-bottom: 21px;
+
+  @include for-size(tablet) {
+    @include icon-property(80px, 82px);
+    margin-bottom: 24px;
+  }
+}
+
+.sign-up__title {
+  margin-bottom: 24px;
+  text-align: center;
+  @include font(700, 24px, 1.21, _);
+
+  @include for-size(tablet) {
+    margin-bottom: 35px;
+  }
+}
+
+.sign-up__info-text {
+  @include font(400, 14px, 1.21, _);
+
+  @include for-size(tablet) {
+    @include font(400, 18px, 1.22, _);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @include for-size(tablet) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.sign-up__info-link {
+  font-weight: 700;
+  text-decoration: underline;
+  color: $secondary-color;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.info-text__wrapper {
+  margin-right: 3px;
+
+  @include for-size(tablet) {
+    margin-right: 7px;
+  }
+}

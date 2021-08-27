@@ -1,0 +1,32 @@
+%button {
+  width: 100%;
+  font: inherit;
+  outline: none;
+  border: none;
+  color: $light-text-color;
+  background-color: $secondary-color;
+  border-radius: 16px;
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+    box-shadow: none !important;
+  }
+
+  &:active {
+    background-color: $active-color;
+    border-color: $active-color;
+  }
+}
+
+%hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
