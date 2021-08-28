@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-sighup-page/static/css/main.1a83bbbd.chunk.css",
+    "main.js": "/react-sighup-page/static/js/main.48329033.chunk.js",
+    "main.js.map": "/react-sighup-page/static/js/main.48329033.chunk.js.map",
+    "runtime-main.js": "/react-sighup-page/static/js/runtime-main.85432fa7.js",
+    "runtime-main.js.map": "/react-sighup-page/static/js/runtime-main.85432fa7.js.map",
+    "static/css/2.1e6683f6.chunk.css": "/react-sighup-page/static/css/2.1e6683f6.chunk.css",
+    "static/js/2.0636f444.chunk.js": "/react-sighup-page/static/js/2.0636f444.chunk.js",
+    "static/js/2.0636f444.chunk.js.map": "/react-sighup-page/static/js/2.0636f444.chunk.js.map",
+    "index.html": "/react-sighup-page/index.html",
+    "static/css/2.1e6683f6.chunk.css.map": "/react-sighup-page/static/css/2.1e6683f6.chunk.css.map",
+    "static/css/main.1a83bbbd.chunk.css.map": "/react-sighup-page/static/css/main.1a83bbbd.chunk.css.map",
+    "static/js/2.0636f444.chunk.js.LICENSE.txt": "/react-sighup-page/static/js/2.0636f444.chunk.js.LICENSE.txt",
+    "static/media/icon-eye.69a86a9f.svg": "/react-sighup-page/static/media/icon-eye.69a86a9f.svg",
+    "static/media/icon-female.3543cb08.svg": "/react-sighup-page/static/media/icon-female.3543cb08.svg",
+    "static/media/icon-male.a43a6642.svg": "/react-sighup-page/static/media/icon-male.a43a6642.svg",
+    "static/media/icon-other.a0a81952.svg": "/react-sighup-page/static/media/icon-other.a0a81952.svg",
+    "static/media/logo.51e49696.svg": "/react-sighup-page/static/media/logo.51e49696.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85432fa7.js",
+    "static/css/2.1e6683f6.chunk.css",
+    "static/js/2.0636f444.chunk.js",
+    "static/css/main.1a83bbbd.chunk.css",
+    "static/js/main.48329033.chunk.js"
+  ]
+}
