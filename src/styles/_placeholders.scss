@@ -30,3 +30,13 @@
   width: 1px !important;
   overflow: hidden;
 }
+
+%label {
+  margin-bottom: 8px !important;
+  @include font(700, 16px, 1.25, _);
+
+  @include for-size(tablet) {
+    margin-bottom: 12px !important;
+    @include font(700, 18px, 1.22, _);
+  }
+}

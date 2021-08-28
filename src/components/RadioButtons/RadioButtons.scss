@@ -1,0 +1,64 @@
+@import 'styles/shared';
+
+.radio-btn {
+  &__group {
+    display: inline-flex;
+    margin-right: -19px;
+
+    @include for-size(tablet) {
+      margin-right: -16px;
+    }
+  }
+
+  &__item {
+    margin-right: 19px;
+
+    @include for-size(tablet) {
+      margin-right: 16px;
+    }
+  }
+
+  &__item input {
+    @extend %hidden;
+  }
+
+  &__label {
+    display: block;
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    fill: $primary-text-color;
+    border: 1px solid $primary-border-color;
+    border-radius: 16px;
+
+    @include for-size(tablet) {
+      width: 156px;
+      padding-top: 20px;
+      padding-bottom: 18px;
+    }
+
+    &--active {
+      @extend .radio-btn__label;
+
+      border: 1px solid $secondary-color;
+      color: $secondary-color;
+      fill: $secondary-color;
+    }
+  }
+}
+
+.icon-gender {
+  margin-bottom: 8px;
+  width: 32px;
+  fill: inherit;
+}
+
+.label__description {
+  @include font(400, 16px, 1.25, _);
+
+  @include for-size(tablet) {
+    @include font(400, 18px, 1.22, _);
+  }
+}
