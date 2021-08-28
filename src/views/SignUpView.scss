@@ -1,6 +1,6 @@
-@import "styles/shared";
+@import 'styles/shared';
 
-.signUp__wrapper {
+.sign-up__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,8 +59,10 @@
   text-decoration: underline;
   color: $secondary-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $hover-color;
+    outline: none;
   }
 }
 

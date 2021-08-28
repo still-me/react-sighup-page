@@ -1,10 +1,10 @@
-import "./SignUpView.scss";
-import SignUpForm from "../components/SignUpForm";
-import { ReactComponent as LogoIcon } from "../images/logo.svg";
+import './SignUpView.scss';
+import SignUpForm from '../components/SignUpForm';
+import { ReactComponent as LogoIcon } from '../images/logo.svg';
 
 export default function SignUpView() {
   return (
-    <div className="signUp__wrapper">
+    <div className="sign-up__wrapper">
       <LogoIcon className="logo" />
       <h1 className="sign-up__title">Sign Up with email</h1>
       <SignUpForm />

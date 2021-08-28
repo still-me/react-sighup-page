@@ -1,59 +1,5 @@
 @import 'styles/shared';
 
-.form__label {
-  @extend %label;
-}
-
-.label__wrapper {
-  margin-top: 20px !important;
-
-  @include for-size(tablet) {
-    margin-top: 30px !important;
-  }
-}
-
-div .form__input {
-  padding: 15px 18px;
-  color: $primary-text-color;
-  @include font(400, 16px, 1.25, _);
-  border-radius: 16px;
-  border: 1px solid $primary-border-color;
-  transition: border 250ms $timing-function;
-
-  @include for-size(tablet) {
-    padding: 24px 25px;
-    @include font(400, 18px, 1.22, _);
-  }
-
-  &:focus {
-    box-shadow: none;
-    border: 1px solid $border-active-color;
-    color: $primary-text-color;
-  }
-
-  &::placeholder {
-    transition: color 250ms $timing-function;
-  }
-
-  &:hover::placeholder {
-    color: $primary-border-color;
-  }
-
-  &--error {
-    border-color: $error-color;
-    color: $error-color;
-  }
-}
-
-.error {
-  margin-top: 12px !important;
-
-  &__message {
-    @include font(400, 16px, 1.25, _);
-    color: $error-color;
-  }
-}
-
 form .login__button {
   @extend %button;
   margin-top: 20px;

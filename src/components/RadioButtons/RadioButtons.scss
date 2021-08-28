@@ -1,5 +1,9 @@
 @import 'styles/shared';
 
+.form__label {
+  @extend %label;
+}
+
 .radio-btn {
   &__group {
     display: inline-flex;
@@ -37,6 +41,11 @@
       width: 156px;
       padding-top: 20px;
       padding-bottom: 18px;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $border-active-color;
     }
 
     &--active {

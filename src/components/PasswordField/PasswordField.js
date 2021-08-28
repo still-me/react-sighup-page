@@ -26,7 +26,9 @@ export default function PasswordField({
       <Form.Label className="form__label">{labelText}</Form.Label>
       <div className="input__wrapper">
         <Form.Control
-          className={`form__input ${isWrong ? 'form__input--error' : null}`}
+          className={`password__input ${
+            isWrong ? 'password__input--error' : null
+          }`}
           style={{
             transition: 'all 250ms cubic-bezier(0.4, 0, 0.2, 1)',
           }}

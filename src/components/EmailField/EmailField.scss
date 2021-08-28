@@ -1,0 +1,26 @@
+@import 'styles/shared';
+
+.label__wrapper {
+  @extend %label__wrapper;
+}
+
+.form__label {
+  @extend %label;
+}
+
+div .email__input {
+  @extend %input;
+
+  &--error {
+    border-color: $error-color;
+    color: $error-color;
+  }
+}
+
+.error {
+  @extend %error;
+
+  &__message {
+    @extend %error__message;
+  }
+}

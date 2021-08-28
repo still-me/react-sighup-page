@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+import './EmailField.scss';
 import Form from 'react-bootstrap/Form';
 
 export default function EmailField({
@@ -19,7 +20,7 @@ export default function EmailField({
     <Form.Group controlId={controlId} className="label__wrapper">
       <Form.Label className="form__label">{labelText}</Form.Label>
       <Form.Control
-        className={`form__input ${isWrong ? 'form__input--error' : null}`}
+        className={`email__input ${isWrong ? 'email__input--error' : null}`}
         style={{
           transition: 'all 250ms cubic-bezier(0.4, 0, 0.2, 1)',
         }}
