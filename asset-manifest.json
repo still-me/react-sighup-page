@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-sighup-page/static/css/main.1a83bbbd.chunk.css",
-    "main.js": "/react-sighup-page/static/js/main.48329033.chunk.js",
-    "main.js.map": "/react-sighup-page/static/js/main.48329033.chunk.js.map",
+    "main.js": "/react-sighup-page/static/js/main.25199983.chunk.js",
+    "main.js.map": "/react-sighup-page/static/js/main.25199983.chunk.js.map",
     "runtime-main.js": "/react-sighup-page/static/js/runtime-main.85432fa7.js",
     "runtime-main.js.map": "/react-sighup-page/static/js/runtime-main.85432fa7.js.map",
     "static/css/2.1e6683f6.chunk.css": "/react-sighup-page/static/css/2.1e6683f6.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.1e6683f6.chunk.css",
     "static/js/2.0636f444.chunk.js",
     "static/css/main.1a83bbbd.chunk.css",
-    "static/js/main.48329033.chunk.js"
+    "static/js/main.25199983.chunk.js"
   ]
 }
