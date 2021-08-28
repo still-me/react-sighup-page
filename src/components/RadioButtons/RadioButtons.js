@@ -6,12 +6,20 @@ import { ReactComponent as MaleIcon } from '../../images/icon-male.svg';
 import { ReactComponent as FemaleIcon } from '../../images/icon-female.svg';
 import { ReactComponent as OtherIcon } from '../../images/icon-other.svg';
 
-export default function RadioButtons({ handleGenderChange, gender }) {
+export default function RadioButtons({
+  handleGenderChange,
+  gender,
+  handleKeyPress,
+}) {
   return (
     <>
       <Form.Label className="form__label">Gender</Form.Label>
 
-      <div className="radio-btn__group" onChange={handleGenderChange}>
+      <div
+        className="radio-btn__group"
+        onChange={handleGenderChange}
+        onKeyPress={handleKeyPress}
+      >
         <div className="radio-btn__item">
           <input id="male" type="radio" name="gender" value="male" />
           <label
@@ -74,4 +82,5 @@ export default function RadioButtons({ handleGenderChange, gender }) {
 RadioButtons.propYypes = {
   handleGenderChange: PropTypes.func.isRequired,
   gender: PropTypes.string.isRequired,
+  handleKeyPress: PropTypes.func.isRequired,
 };

@@ -13,6 +13,11 @@ const SignUpForm = () => {
   const handleGenderChange = ({ target: { value } }) => {
     setGender(value);
   };
+  const handleKeyPress = ({ key, target }) => {
+    if (key === 'Enter') {
+      setGender(target.htmlFor);
+    }
+  };
 
   const [email, setEmail] = useState('');
   const handleEmailChange = ({ target: { value } }) => {
@@ -91,7 +96,11 @@ const SignUpForm = () => {
 
   return (
     <Form onSubmit={handleSubmit} className="login__form">
-      <RadioButtons handleGenderChange={handleGenderChange} gender={gender} />
+      <RadioButtons
+        handleGenderChange={handleGenderChange}
+        gender={gender}
+        handleKeyPress={handleKeyPress}
+      />
 
       <EmailField
         controlId="formBasicEmail"
